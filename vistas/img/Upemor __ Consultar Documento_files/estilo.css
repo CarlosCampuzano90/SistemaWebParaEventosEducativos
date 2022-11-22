@@ -1,0 +1,835 @@
+/*
+Estilo please_smile
+*/
+
+body {
+	margin: 0px;
+	font-size: 80%;
+	font-family: Arial,Georgia;
+}
+
+#page {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}
+
+#page #encabezado{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 8%;
+	background-color: rgb(245,0,3);
+}
+
+
+#page #contenido{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 85%;
+}
+
+#page #piePagina {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 7%;
+	text-align: center;
+	background-color: rgb(79,31,145);
+	color: white;
+}
+
+#contenido #wrap {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	display: inline-block;
+	float: left;
+	margin: 2%;
+	width: 96%;
+	height: 87%;
+	border: 1px solid #ccc;
+}
+
+#contenido #wrap #panelIzquierdo {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	/*border-bottom-right-radius: 200px;*/
+	position: relative;
+	display: inline-block;
+	float: left;
+	/*/vertical-align: top;*/
+	overflow: hidden;
+	width: 15%;
+	height: 100%;
+	background-color: rgb(79,31,145);
+}
+
+
+
+#contenido #wrap #panelCentral {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	display: inline-block;
+	float: left;
+	overflow: auto;
+	/* width: 60%; */
+	width: 85%;
+	height: 98%;
+	background-color: white;
+	font-size: 1em;
+	padding: 1%;
+}
+
+#contenido #wrap #panelCentral #contCentral h2 {
+	font-family: Georgia;
+	font-weight: bold;
+	color: rgb(79,31,145);
+	letter-spacing: 2px;
+}
+
+#contenido #wrap #panelCentral #contCentral h3 {
+	font-family: Georgia;
+	font-weight: bolder;
+	color: rgb(245,0,3);
+	letter-spacing: 2px;
+}
+
+#contenido #wrap #panelCentral #contCentral p {
+	font-family: Arial;
+	color: rgb(79,31,145);
+}
+
+/*em , i {
+	padding-left: 1em;
+	font-family: Arial;
+	font-weight: bold;
+	color: rgb(79,31,145);
+	letter-spacing: 1px;		
+}*/
+
+#contenido #wrap #panelCentral #contCentral ul li {
+	font-family: Arial;
+	color: rgb(79,31,145);
+	letter-spacing: 1px;
+}
+
+#contenido #wrap #panelCentral #contCentral ol li {
+	font-family: Arial;
+	color: rgb(79,31,145);
+	letter-spacing: 1px;
+}
+
+.tabla-completa {
+	border-collapse: collapse; 
+	border: 1px solid rgb(245,0,3);
+}
+
+.tabla-completa thead tr th {
+	border: 1px solid rgb(245,0,3);	
+	font-weight: bold;
+}
+
+.tabla-completa thead tr th.enc-fondo {
+	background-color: rgb(79,31,145);
+	color: white !important;
+}
+
+.tabla-completa tfoot tr th {
+	border: 1px solid rgb(245,0,3);	
+	font-weight: bold;
+}
+
+.tabla-completa tr td {
+	border: 1px solid rgb(245,0,3);	
+}
+
+#contenido #wrap #panelCentral #contCentral table { 
+  border-collapse: collapse; 
+}
+
+#contenido #wrap #panelCentral #contCentral table thead tr th {
+	border-bottom: 1px solid rgb(245,0,3);
+	color: rgb(245,0,3);
+	font-family: Georgia;
+	font-weight: bold;
+	text-align: center;
+}
+
+#contenido #wrap #panelCentral #contCentral table tbody tr td {
+	font-size: 1em;
+	font-family: Arial;
+	text-align: left;
+	vertical-align: middle;
+	text-align: left;
+	color: rgb(79,31,145);
+}
+
+#contenido #wrap #panelCentral #contCentral table tbody tr td.cel-right {
+	text-align: right;
+}
+
+#contenido #wrap #panelCentral #contCentral table tfoot tr td {
+	font-size: 1em;
+	font-family: Arial;
+	text-align: left;
+	vertical-align: middle;
+	text-align: left;
+	color: rgb(79,31,145);
+	border-bottom: 1px solid rgb(245,0,3);
+}
+
+/*#contenido #wrap #panelCentral #contCentral table tbody tr td:hover {
+	background-color: rgb(79,31,145);
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+}*/
+
+/*#contenido #wrap #panelCentral #contCentral table tbody tr td:hover a {
+	background-color: rgb(79,31,145);
+	color: white;
+}*/
+
+#contenido #wrap #panelCentral #contCentral table tbody tr td a {
+	font-size: 1em;
+	text-decoration: none;
+}
+
+#contenido #wrap #panelDerecho {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	/*border-bottom-left-radius: 200px;*/
+	position: relative;
+	/* display: inline-block; */
+	display: none;
+	float: left;
+	overflow: hidden;
+	max-width: 25%;
+	width: 25%;
+	max-height: 100%;
+	height: 100%;
+	background-color: rgb(245,0,3);
+	color: white;
+}
+
+#contenido #wrap #panelDerecho #imgSection {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 40%;
+	overflow: hidden;
+
+	-webkit-background-clip: content-box;
+	-moz-background-clip: content-box;
+	background-clip: content-box;
+	background: #fff url(../../../../img/galeriaNosotros/i1.jpg) no-repeat top left;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+
+#contenido #wrap #panelDerecho #imgSection .imgPrincipal{
+	width: 100%;
+	height: 100%;
+}
+
+#contenido #wrap #panelDerecho #textSection{
+	background-color: rgb(245,0,3);
+	position: relative;
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 60%;
+	color: white;
+	font-size: 1em;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+#contenido #wrap #panelDerecho #textSection #box-textSection {
+	width: 95%;
+	height: 95%;
+	margin-left: 1em;
+	/*margin-right: 1em;*/
+	overflow: auto;
+	font-size: 1em;
+}
+
+#contenido #wrap #panelDerecho #textSection #box-textSection a {
+	color: yellow;
+}
+
+#contenido #wrap #panelDerecho #textSection #box-textSection ul li a {
+	color: yellow;
+}
+
+#page #encabezado #logoEncabezado {
+	position: relative;
+	display: inline-block;
+	float: right;
+	width: 15%;
+	height: 100%;
+	text-align: right;
+}
+
+#page #encabezado #logoEncabezado img {
+	position: relative;
+	display: block;
+	min-height: 30px;
+	height: 30px;
+	margin: 1% 30%;
+}
+
+#contenido #wrap #panelIzquierdo #menuPagina {
+	position: relative;
+	display: inline-block;
+	border-sizing: border-box;
+	width: 100%;
+	height: 60%;
+	background-color: rgb(251,176,52);
+	overflow:auto;
+}
+
+#contenido #wrap #panelIzquierdo #menuPagina ul {
+	list-style: disc;
+	margin: 0 0 0 2em;
+	/*padding: 0 0 0 1em;*/
+	padding: 0px;
+	line-height: 2em;
+	color: rgb(245,0,3);
+}
+
+/*
+#contenido #wrap #panelIzquierdo #menuPagina ul li {
+	width: 80%;
+	margin: 3px 0px 0px 0px;
+}
+
+#contenido #wrap #panelIzquierdo #menuPagina ul li a {
+	text-decoration: none;
+	color: rgb(245,0,3);
+	font-size: 1.3em;
+	font-family: Arial;
+	font-weight: bold;
+	text-align: center;
+}
+
+#contenido #wrap #panelIzquierdo #menuPagina ul li a:hover {
+	font-size: 1em;
+	color: white !important;
+	letter-spacing: 1px;
+}
+*/
+
+#contenido #wrap #panelIzquierdo #menuPagina ul li {
+	width: 80%;
+	margin: 3px 0px 0px 0px;
+}
+
+#contenido #wrap #panelIzquierdo #menuPagina a {
+	text-decoration: none;
+	color: rgb(79,31,145);
+	font-size: 1.1em;
+	font-family: Arial;
+	font-weight: bold;
+	line-height:200%;
+}
+
+#contenido #wrap #panelIzquierdo #menuPagina a:hover {
+	/* color: white !important; */
+}
+
+#contenido #wrap #panelIzquierdo #InfoBasica {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 40%;
+	overflow: auto;
+	color: white;
+	font-size: 1em;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+#contenido #wrap #panelIzquierdo #InfoBasica #box-infoBasica ul {
+	position: relative;
+	display: inline-block;
+	float: left;
+	list-style: none;
+	width: 100%;
+	height: auto;
+	padding: 0px;
+}
+
+
+#contenido #wrap #panelIzquierdo #InfoBasica #box-infoBasica ul li {
+	margin: 5px 0px 0px .8em;
+	width: 80%;
+}
+
+#contenido #wrap #panelIzquierdo #InfoBasica #box-infoBasica ul li a {
+	color: white;
+	font-size: 1em;
+	font-family: Arial;
+	font-weight: bold;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+
+#contenido #wrap #panelIzquierdo #InfoBasica #box-infoBasica ul li a:hover {
+	font-size: 1em;
+	color: rgb(251,176,52);
+	letter-spacing: 1px;
+}
+
+.avisoUrgente {
+	border-sizing: box-sizing;
+	border-radius: 10px;
+	position: fixed;
+	display: none;
+	top: 30%;
+	right: 0px;
+	/*margin-right: .5em;
+	margin-top: 7em;*/
+	padding: .7em;
+	z-index: 99;
+	width: 30%;
+	height: 30%;
+	border: 2px solid black;
+	background-color: rgb(251,176,52);
+	color: rgb(79,31,145);
+	font-family: Arial;
+	font-size: 1em;
+}
+
+
+.avisoUrgente #tituloAviso {
+	position: relative;
+	display: block;
+	border-bottom: 1px solid rgb(79,31,145);
+	font-size: 1em;
+	font-family: Georgia;
+	font-weight: bold;
+	text-align: center;
+}
+
+.avisoUrgente #contenidoAviso {
+	position: relative;
+	display: block;	
+	font-size: 1em;
+	font-family: Arial;
+	text-align: justify;
+}
+
+#contenido #wrap #panelCentral #contCentral {
+	position: relative;
+	display: inline-block;
+	float: left;
+	max-width: 100%;
+	max-height: 100%;
+	width: 100%;
+	height: 100%;
+}
+
+#contenido #wrap #panelCentral #contCentral #principal {
+	position: relative;
+	display: inline-block;
+	float: left;
+	max-width: 750%;
+	max-height: 100%;
+	width: 73%;
+	height: 100%;
+	padding-left: 1%;
+	padding-right: 1%;
+	overflow: auto;
+}
+
+#contenido #wrap #panelCentral #contCentral #conv-avisos {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	display: inline-block;
+	float: left;
+	width: 25%;
+	height: 100%;
+	padding:1%;
+}
+
+#contenido #wrap #panelCentral #contCentral #conv-avisos #conv {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	display: block;
+	display: block;
+	width: 100%;
+	height: 35%;
+	border: 2px solid rgb(79,31,145);
+	border-radius: 10px;
+}
+
+#contenido #wrap #panelCentral #contCentral #conv-avisos #avi {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	height: 35%;
+	border: 2px solid rgb(79,31,145);
+	border-radius: 10px;	
+}
+
+#contenido #wrap #panelCentral #contCentral #conv-avisos #conv #tituloConvocatoria {
+	width: 100%;
+	height: 10%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: rgb(251,176,52);
+	color: black;
+	text-align: center;
+	font-weight: bold;
+}
+
+#contenido #wrap #panelCentral #contCentral #conv-avisos #conv #contenidoConvocatoria {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 80%;
+	overflow: auto;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#contenido #wrap #panelCentral #contCentral #conv-avisos #avi #tituloAvisos {
+	width: 100%;
+	height: 10%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: rgb(251,176,52);
+	color: black;
+	text-align: center;
+	font-weight: bold;
+}
+
+#contenido #wrap #panelCentral #contCentral #conv-avisos #avi #contenidoAvisos {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 80%;
+	overflow: auto;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
+
+
+.ui-tabs {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative; /* position:  relative prevents IE scroll bug (element with position:  relative inside container with overflow:  auto appear as "fixed") */
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: .2em;
+}
+
+.ui-tabs .ui-tabs-nav {
+	margin: 0;
+	padding: .2em .2em 0;
+	position: relative;
+	display: inline;
+}
+.ui-tabs .ui-tabs-nav li {
+	list-style: none;
+	float: left;
+	position: relative;
+	top: 0;
+	/*margin: 1px .2em 0 0;*/
+	padding: 0;
+	white-space: nowrap;
+}
+.ui-tabs .ui-tabs-nav li a {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	padding: .5em 1em;
+	text-decoration: none;
+	border: 1px solid #ccc;
+	background-color: white;
+	color: rgb(79,31,145);
+	font-family: Georgia;
+	font-weight: bold;
+}
+
+
+.ui-tabs .ui-tabs-nav li a:hover {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid red;
+}
+
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+	margin-bottom: -1px;
+	padding-bottom: 1px;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a,
+.ui-tabs .ui-tabs-nav li.ui-state-disabled a,
+.ui-tabs .ui-tabs-nav li.ui-tabs-loading a {
+	cursor: text;
+	background-color: rgb(79,31,145);
+	color: white
+}
+.ui-tabs .ui-tabs-nav li a, /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a {
+	cursor: pointer;
+}
+
+.ui-tabs .ui-tabs-panel {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	height: auto;
+	border-width: 0;
+	padding: 2.5em 1.4em;
+	background: none;
+	border: 1px solid #ccc;
+}
+
+.box-Extra {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	display: inline-block;
+	float: left;
+	width: 35%;
+	height: 30em;
+	margin-left: 10%;
+	margin-top: 1%;
+	padding: 2%;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+
+.box-Extra .imgExtra {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 38%;
+}
+
+
+.box-Extra .imgExtra > img {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.box-Extra .tituloExtra {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 11%;
+	font-family: Georgia;
+	font-size: 1.3em;
+	color: rgb(79,31,145);
+}
+
+.box-Extra .contenidoExtra {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 43%;
+	margin-top: 1%;
+	font-family: Arial;
+	background-color: white;
+	overflow: auto;
+}
+
+.faq-fecha {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	background-color: rgb(79,31,145);
+	color: white;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.faq-nombre {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	color: black;
+	font-family: Georgia;
+	font-weight: bold;
+	font-size: 1em;
+	text-transform: capitalize;
+}
+
+.faq-respuesta {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	color: black;
+	font-family: Arial;
+	font-size: 1em;
+	background-color: #ddd;
+}
+
+#objContenido {
+	position: relative;
+	display: inline-block;
+	float: left;
+	width: 85%;
+	height: 100%;
+	padding: 20px;
+	/*border: 1px solid #ccc;*/
+}
+
+#ie-box {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+table .filaTitulo{
+	background-color: rgb(79,31,145);
+	/* color: rgb(245,0,3); */
+	color: rgb(251,176,52);
+	height: 40px;
+	font-size: 16px;
+}
+
+.listadoTablaMSV{
+	border-top: 1px solid #aaa;
+}
+.tituloSeccionMSV-A{
+	font-size:32px;
+	color:rgb(245,0,3);
+}
+.tituloSeccionMSV-B{
+	font-size:32px;
+	color:rgb(79,31,145);
+}
+
+.elementoMenuIzquierdo{
+	background-color:rgb(251,176,52);
+}
+
+.elementoMenuIzquierdo:hover{
+	background-color:#FFE4E1;
+}
+
+.filaMenuIzquierdo{
+	border-bottom: 1px solid #DAA520;
+}
+
+
+.listadoTablaMSV{
+	background-color:#FFF;
+}
+.listadoTablaMSV:hover{
+	background-color:#E6E6FA;
+}
+
+
+
+fieldset{-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;}
+
+/* Clases para representar los pasos de un proceso. El cuadro lleva una flechita hacia arriba */
+/*  Inicio -------------------------  */
+.tituloPaso{
+	background-color:rgb(79,31,145);
+	color:#fff;
+	width: 500px;
+	padding: 5px;
+	font-size: 16px;
+}
+
+
+.arrow-before {
+    width:0px;
+    height:0px;
+    border-left: 10px solid transparent;  /* izquierda flecha */
+    border-right: 10px solid transparent; /* derecha flecha */
+    border-bottom: 10px solid black; /* base flecha y color*/
+    font-size:0px;
+    line-height:0px;
+    top: 10px;
+    left: 5px;
+    position: relative;
+}
+.arrow-after {
+    width:0px;
+    height:0px;
+    border-left: 10px solid transparent;  /* izquierda flecha */
+    border-right: 10px solid transparent; /* derecha flecha */
+    border-bottom: 10px solid rgb(79,31,145); /* base flecha y color*/
+    font-size:0px;
+    line-height:0px;
+    top: 1px;
+    left: 5px;
+    position: relative;
+}
+/*  Fin -------------------------  */
+
+.contraste{
+	color:rgb(79,31,145);
+	font-weight: bold;
+}

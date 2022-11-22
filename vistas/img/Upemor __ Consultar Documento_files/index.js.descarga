@@ -1,0 +1,30 @@
+var contadorTw=0;
+var contadorFace=0;
+var contadorTransparencia=0;
+
+$(document).ready(function(e) {
+	
+	
+	//Hipervínculos
+	$("#pagMision").click(function(e) {
+        $(location).attr('href',"https://www.upemor.edu.mx/nosotros/");
+    });
+	$("#pagIndex").click(function(e) {
+        $(location).attr('href',"/menu.php");
+    });
+
+	$("#pagBuzon").click(function(e) {
+        $(location).attr('href',"https://www.upemor.edu.mx/buzon/");
+    });
+	$("#pagSitios").click(function(e) {
+        $(location).attr('href',"https://www.upemor.edu.mx/sitios-de-interes/");
+    });
+	
+	$("#pagTransparencia").click(function(e) {
+        $(location).attr('href',"http://www.transparenciamorelos.mx/otis/UPEMOR");
+    });
+
+	
+	
+});
+

@@ -1,0 +1,157 @@
+// JavaScript Document
+/*
+*Fecha de creación: 2014-09-01
+*Elaborado por:
+*Ing. Luis Enrique López Hernández
+*---------------
+*
+*llopez@wonderland.com.mx
+*777-254-06-87
+*/
+
+//Método que se carga inicialmente
+$(document).ready(function() {
+	inicializa();
+
+});
+
+
+
+var num_alumno=1;
+function inicializa(){
+	$("#carrera").change(carrera);
+	$("#carrera").change(cambios);
+	$("#categoria").change(cambios);
+	$("#profesor").change(cambios);
+	$("#materia").change(cambios);
+	
+	$("#btmbuscar_doc").click(verificar);
+}
+function carrera(){
+		var carrera = $(this).val()
+		var funcion = "categoria";
+		var datos={carrera:carrera,llave:$("#llave").val(),funcion:funcion,} 
+		$.ajax({
+		async:true,
+		type: "POST",
+		dataType: "html",
+		contentType: "application/x-www-form-urlencoded",
+		url:"control/controllerDocumentos.php",
+		data:datos,
+		beforeSend:function (e){$("#categoria").html("<img src='../../../img/loading.gif' width=15>");},
+		success:function (data){
+			$("#categoria").html(data);
+			
+			$("#btmresetdoc").click(cambios);
+	    },
+    error:function (data){},
+    timeout:4000
+  }); 
+  return false;
+}
+
+
+function verificar(){
+	 num_alumno=1;
+	 cambios();
+	
+				
+				var data = new FormData();
+				var llave=$("#llave").val();
+				var mat=$("#materia option:selected").val();
+				var plan=$("#carrera option:selected").val();
+				var categoria=$("#categoria option:selected").val();
+				var profesor=$("#profesor option:selected").val();
+				var nombredoc=$("#nombredoc").val();
+				
+				data.append('llave',llave);
+				data.append('mat',mat);
+				data.append('plan',plan);
+				data.append('categoria',categoria);
+				data.append('profesor',profesor);
+				data.append('nombredoc',nombredoc);
+				
+				data.append('funcion','buscar_doc');
+				$.ajax
+					({
+						contentType:false,
+						data:data,
+						processData:false,
+						cache:false,
+						async:true,
+						type: "POST",
+						dataType: "html",
+						url:"control/controllerDocumentos.php",
+						beforeSend:function (e){$("#cajaNivel2").html("<img src='../../../img/loading.gif' width=45>Cargando Documentos");},
+						success: function (e)
+							{
+							
+										$("#cajaNivel2").html(e);
+										$(".Seleccionar").click(seleccionar);
+										//$("#btmguardar_doc").click(guardar_documentos);
+								
+			  				},
+		  				error: function (e){}
+	  				});
+	 		
+			
+	
+}
+
+
+
+//funcion utiizada en casao de borrar los alumnos
+function denuevo(){
+	num_alumno=1;
+	$("#alumno2").text("");
+	$("#alumno3").text("");
+	$("#alumno4").text("");
+	$("#alumno1").removeAttr("disabled");
+	
+}
+//funcion utiizada en casao de hacer algun CAMBIO a los parametros de el documento
+function cambios(){
+	
+		
+			$('#cajaNivel2').text("");
+			$('#cajaNivel3').text("");
+			num_alumno=1;
+		
+}
+
+	
+function seleccionar(){
+
+	var fila=$(this).parents().get(1);
+	celdas=$(fila).find('td');
+	var id_doc=celdas.eq(0).text();
+
+	var funcion="mostrar_documento";
+	
+	var datos={id_doc:id_doc,llave:$("#llave").val(),funcion:funcion} 
+	$.ajax({
+		async:true,
+		type: "POST",
+		dataType: "html",
+		contentType: "application/x-www-form-urlencoded",
+		url:"control/controllerDocumentos.php",
+		data:datos,
+		beforeSend:function (e){$("#cajaNivel3").html("<img src='../../../img/loading.gif' width=45>Cargando Vinculos");},
+		success:function (data){
+			$("#cajaNivel3").html(data);
+			$(".Desvincular").click(Desvincular);
+			$(".Eliminar").click(Eliminar);
+		},
+		error:function (data){}
+	}); 
+	return false ;
+
+
+}
+
+
+
+
+
+
+
